@@ -112,12 +112,19 @@ function App() {
 
   // 診断サイトのURLをコピー
   async function copyUrl() {
+    if (!diagnosis) return;
+
     try {
-      const url = `${window.location.origin}${window.location.pathname}`;
-      await navigator.clipboard.writeText(url);
-      setCopyMessage("URLをコピーしました!");
+      const text = `私のココロに住むバグねこは「${diagnosis.result.name}」でした！🐾🔍
+
+      あなたのココロにはどんなバグねこが住んでる？🐈
+      気になる人は診断してみてね！
+      あなたの診断結果もぜひシェアしてね✨`;
+
+      await navigator.clipboard.writeText(text);
+      setCopyMessage("シェア用の文章をコピーしました！");
     } catch {
-      setCopyMessage("コピーできませんでした。URLを手動でコピーしてね。");
+      setCopyMessage("コピーできませんでした。");
     }
   }
 
@@ -333,7 +340,7 @@ function App() {
             </button>
 
             <button className="option-button" onClick={copyUrl}>
-              🔗 診断URLをコピー
+              🔗 URLをコピーしてシェアする
             </button>
 
             {copyMessage && (
