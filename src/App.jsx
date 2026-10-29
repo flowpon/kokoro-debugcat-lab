@@ -256,7 +256,7 @@ function App() {
           </p>
 
           <div className="loading-bug" aria-hidden="true">
-            👾
+            🐾
           </div>
 
           <h1 className="loading-title">ココロを解析中...</h1>
