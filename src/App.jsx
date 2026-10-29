@@ -92,10 +92,18 @@ function App() {
   }
 
   // Xで診断結果をシェア
+
   function shareToX() {
     if (!diagnosis) return;
 
-    const text = `私のココロに住むバグねこは「${diagnosis.result.name}」でした!🐾 #ココロに住むバグねこ診断`;
+    const text = `私のココロに住むバグねこは「${diagnosis.result.name}」でした！🐾🔍
+
+    あなたのココロにはどんなバグねこが住んでる？🐈
+    気になる人は診断してみてね！
+    あなたの診断結果もぜひポストで教えてね✨
+
+    #ココロに住むバグねこ診断`;
+
     const url = `${window.location.origin}${window.location.pathname}`;
     const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
 
