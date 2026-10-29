@@ -95,7 +95,7 @@ function App() {
   function shareToX() {
     if (!diagnosis) return;
 
-    const text = `私のココロに住むバグねこは「${diagnosis.result.name}」でした!🐛 #ココロに住むバグねこ診断`;
+    const text = `私のココロに住むバグねこは「${diagnosis.result.name}」でした!🐾 #ココロに住むバグねこ診断`;
     const url = `${window.location.origin}${window.location.pathname}`;
     const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
 
