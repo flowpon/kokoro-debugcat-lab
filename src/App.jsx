@@ -153,7 +153,7 @@ function App() {
 
           <div className="hero-icon" aria-hidden="true">
             <img
-              src="/images/overthinking.png"
+              src={`${import.meta.env.BASE_URL}images/overthinking.png`}
               alt="考えすぎバグのキャラクター"
             />
           </div>

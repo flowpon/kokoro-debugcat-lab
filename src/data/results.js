@@ -2,7 +2,7 @@ export const results = {
   overthinking: {
     name: "考えすぎループ型",
     character: "ぐるぐるちゃん🌀",
-    image: "/images/overthinking.png",
+    image: `${import.meta.env.BASE_URL}images/overthinking.png`,
     catchphrase: "その会話、脳内で何周目？",
     description:
       "終わった会話も、ちょっとした失敗も、頭の中で何度も再生。寝る前に突然「あの返事、変だったかも」と思い出して、脳内の反省会が始まることも。",
@@ -17,7 +17,7 @@ export const results = {
   people_pleasing: {
     name: "気遣い過剰型",
     character: "いいこちゃん💗",
-    image: "/images/people_pleasing.png",
+    image: `${import.meta.env.BASE_URL}images/people_pleasing.png`,
     catchphrase: "みんなの気持ち、自分の気持ちは？",
     description:
       "相手が困っていないか、嫌な思いをしていないかが気になり、つい周りを優先しがち。頼まれると断れず、自分の予定や気持ちを後回しにしてしまうことも。",
@@ -32,7 +32,7 @@ export const results = {
   procrastination: {
     name: "先延ばし型",
     character: "あとでちゃん🐢",
-    image: "/images/procrastination.png",
+    image: `${import.meta.env.BASE_URL}images/procrastination.png`,
     catchphrase: "未来の自分を信じすぎ。",
     description:
       "やるべきことは分かっているのに、「もう少し休んでから」とつい後回し。気づけば締め切りが迫り、最後になって未来の自分に丸投げしたことを後悔しがち。",
@@ -47,7 +47,7 @@ export const results = {
   perfectionism: {
     name: "完璧主義型",
     character: "きっちりちゃん📋",
-    image: "/images/perfectionism.png",
+    image: `${import.meta.env.BASE_URL}images/perfectionism.png`,
     catchphrase: "100点を目指して、まだ提出できません。",
     description:
       "細かな部分まで気になり、納得するまで何度も確認したくなるタイプ。完成しているのに「もう少し直せるかも」と考え続けて、なかなか提出できないことも。",
@@ -62,7 +62,7 @@ export const results = {
   emotional: {
     name: "感情ダダ漏れ型",
     character: "ぽろりちゃん🌈",
-    image: "/images/emotional.png",
+    image: `${import.meta.env.BASE_URL}images/emotional.png`,
     catchphrase: "心の字幕、わりと常時表示。",
     description:
       "うれしいときは顔がぱっと明るくなり、嫌なことがあると表情や態度に出やすいタイプ。隠しているつもりでも、周りには気持ちが伝わっていることがあるかも。",
@@ -77,7 +77,7 @@ export const results = {
   distance_control: {
     name: "距離感調整型",
     character: "すいすいちゃん🫧",
-    image: "/images/distance_control.png",
+    image: `${import.meta.env.BASE_URL}images/distance_control.png`,
     catchphrase: "近づきたい。でも少し離れたい。",
     description:
       "人と仲良くしたい気持ちはあるけれど、一人でゆっくり過ごす時間も欠かせないタイプ。たくさん話して楽しかった翌日に、誰とも話さず静かに過ごしたくなることも。",
@@ -92,7 +92,7 @@ export const results = {
   easygoing: {
     name: "マイペース型",
     character: "のんびりちゃん☁️",
-    image: "/images/easygoing.png",
+    image: `${import.meta.env.BASE_URL}images/easygoing.png`,
     catchphrase: "急かされても、心の時計は通常運転。",
     description:
       "周りが急いでいても、自分に合ったペースを大切にするタイプ。焦らず落ち着いて行動できる一方で、気づいたら予定の時間が迫っていて慌てることも。",
@@ -107,7 +107,7 @@ export const results = {
   hyperfocus: {
     name: "好きに一直線型",
     character: "むちゅうちゃん✨",
-    image: "/images/hyperfocus.png",
+    image: `${import.meta.env.BASE_URL}images/hyperfocus.png`,
     catchphrase: "好きなことには、時間の概念がありません。",
     description:
       "好きなことや気になることを見つけると、時間を忘れるほど夢中になるタイプ。作業に集中しているうちに、ごはんや予定、ほかの用事が後回しになっていることも。",
