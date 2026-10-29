@@ -111,18 +111,26 @@ function App() {
   }
 
   // 診断サイトのURLをコピー
+
   async function copyUrl() {
     if (!diagnosis) return;
 
     try {
+      const url = `${window.location.origin}${window.location.pathname}`;
+
       const text = `私のココロに住むバグねこは「${diagnosis.result.name}」でした！🐾🔍
 
       あなたのココロにはどんなバグねこが住んでる？🐈
       気になる人は診断してみてね！
-      あなたの診断結果もぜひシェアしてね✨`;
+      あなたの診断結果もぜひシェアしてね✨
+
+      #ココロに住むバグねこ診断
+
+      🐾 診断はこちら
+      ${url}`;
 
       await navigator.clipboard.writeText(text);
-      setCopyMessage("シェア用の文章をコピーしました！");
+      setCopyMessage("シェア文とURLをコピーしました！");
     } catch {
       setCopyMessage("コピーできませんでした。");
     }
