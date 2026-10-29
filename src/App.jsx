@@ -96,7 +96,7 @@ function App() {
     if (!diagnosis) return;
 
     const text = `私のココロに住むバグねこは「${diagnosis.result.name}」でした!🐛 #ココロに住むバグねこ診断`;
-    const url = window.location.href;
+    const url = `${window.location.origin}${window.location.pathname}`;
     const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
 
     window.open(shareUrl, "_blank", "noopener,noreferrer");
@@ -105,7 +105,8 @@ function App() {
   // 診断サイトのURLをコピー
   async function copyUrl() {
     try {
-      await navigator.clipboard.writeText(window.location.href);
+      const url = `${window.location.origin}${window.location.pathname}`;
+      await navigator.clipboard.writeText(url);
       setCopyMessage("URLをコピーしました!");
     } catch {
       setCopyMessage("コピーできませんでした。URLを手動でコピーしてね。");
